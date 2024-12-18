@@ -1,6 +1,6 @@
-SELECT DATE_TRUNC(order_created_at, DAY) AS reporting_date, 1 AS column_1,
+SELECT DATE_TRUNC(order_created_at, DAY) AS reporting_date, 2 AS column_2, 1 AS column_1,
     mapping.account_manager,
-    mapping.state,
+    mapping.state,b  
     COUNT(DISTINCT order_id) AS total_orders,
     AVG(total_distinct_items) AS average_total_distinct_items,
     SUM(sum_feedback_score) / SUM(total_feedbacks) AS average_feedback_score,
